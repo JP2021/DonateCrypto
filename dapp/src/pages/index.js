@@ -35,7 +35,7 @@ export default function Home() {
               : (
                 <div className="col-10 col-sm-8 col-lg-6">
                   <p className='mb-3'>Seja bem vindo {wallet}</p>
-                  <p className='mb-3'>O que você deseja fazer?</p>
+                  <p className='mb-3'>O que você deseja fazer??</p>
                   <div className='col-12'>
                     <p><Link href="/donate" className='btn btn-primary col-6 p-3'>Quero fazer uma doação</Link></p>
                     <p><Link href="/create" className='btn btn-secondary col-6 p-3'>Quero criar uma campanha</Link></p>
