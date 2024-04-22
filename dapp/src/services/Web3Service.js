@@ -1,7 +1,7 @@
 import Web3 from "web3";
 import ABI from "./ABI.json";
 
-const CONTRACT_ADDRESS = "0xd25C7236149d878a0A00c8eBeDeaAB70991Bc767";
+const CONTRACT_ADDRESS = "0xdaD49B26176c187d1c0C9330830492b5Da5271cA";
 
 export async function doLogin() {
 
@@ -24,7 +24,11 @@ function getContract() {
 
 export function addCampaign(campaign) {
     const contract = getContract();
+      
+      
     return contract.methods.addCampaign(campaign.title, campaign.description, campaign.videoUrl, campaign.imageUrl).send();
+      
+  
 }
 
 export function getLastCampaignId() {

@@ -38,19 +38,19 @@ export default function Create() {
                 <hr className="mb-4" />
                 <div className="col-6">
                     <div className="form-floating mb-3">
-                        <input type="text" id="title" className="form-control" value={campaign.title} onChange={onInputChange} />
+                        <input type="text" id="title" className="form-control" value={campaign.title} autoFocus required onChange={onInputChange}   />
                         <label for="title">Título:</label>
                     </div>
                     <div className="form-floating mb-3">
-                        <textarea id="description" className="form-control" value={campaign.description} onChange={onInputChange} />
+                        <textarea id="description" className="form-control" value={campaign.description} autoFocus required  onChange={onInputChange} />
                         <label for="description">Descrição:</label>
                     </div>
                     <div className="form-floating mb-3">
-                        <input type="text" id="imageUrl" className="form-control" value={campaign.imageUrl} onChange={onInputChange} />
+                        <input type="text" id="imageUrl" className="form-control" value={campaign.imageUrl} autoFocus required onChange={onInputChange} />
                         <label for="imageUrl">URL da Imagem:</label>
                     </div>
                     <div className="form-floating mb-3">
-                        <input type="text" id="videoUrl" className="form-control" value={campaign.videoUrl} onChange={onInputChange} />
+                        <input type="text" id="videoUrl" className="form-control" value={campaign.videoUrl} autoFocus required onChange={onInputChange} />
                         <label for="videoUrl">URL do Vídeo:</label>
                     </div>
                 </div>
